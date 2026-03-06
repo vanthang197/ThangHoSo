@@ -268,16 +268,13 @@
 
     @media print {
             /* Đảm bảo rằng toàn bộ nội dung hiển thị khi in */
-            .cvo-clickable-link {
-                color: inherit !important;
-                width: 255.05px;
-                height: 32.2px;
-                display: inline-block;
-                word-break: break-all; /* Giúp văn bản xuống dòng khi cần thiết */
-                overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước khung */
-                white-space: normal; /* Cho phép xuống dòng */
-            }
-
+                .cvo-clickable-link {
+        color: inherit !important;
+        display: inline;
+        word-break: normal;      /* bỏ break-all */
+        overflow: visible;
+        white-space: nowrap;     /* không cho xuống dòng */
+    }
             /* Hiển thị tất cả các thẻ span */
             span {
                 display: inline;
@@ -552,10 +549,23 @@
     <i class="fa fa-map-marker"></i>
     <span class="cvo-profile-info-value" id="cvo-profile-address">Phú Nhuận, HCM, Việt Nam</span>
     </div>
+    
     <div class="contact-item">
     <i class="fa fa-info"></i>
-    <span class="cvo-profile-info-value" id="cvo-profile-website"><a href="https://www.linkedin.com/in/thangdangprofile/" target="_blank" class="cvo-clickable-link" rel="noreferrer noopener">https://www.linkedin.com/in/thangdangprofile/</a></span>
+    <span class="cvo-profile-info-value" id="cvo-profile-website"><a href="https://www.linkedin.com/in/thangdangprofile/" target="_blank" class="cvo-clickable-link" rel="noreferrer noopener" style="text-decoration: underline;" >www.linkedin.com/in/thangdangprofile/</a></span>
     </div>
+
+        <div class="contact-item">
+    
+    
+    </div>
+
+        <div class="contact-item">
+    <i class="fa fa-info"></i>
+    <span class="cvo-profile-info-value" id="cvo-profile-website"><a href="https://vanthang197.github.io/portfolio6576/" target="_blank" class="cvo-clickable-link" rel="noreferrer noopener" style="text-decoration: underline;" >vanthang197.github.io/portfolio6576/</a></span>
+    </div>
+
+
     </div>
     <div style="clear: both;"></div>
     </div>
